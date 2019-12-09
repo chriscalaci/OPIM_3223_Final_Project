@@ -573,7 +573,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 717349049}
   playerCamera: {fileID: 1740434087}
-  health: 3
   ballDistance: 1.5
   ballThrowingForce: 500
   holdingBall: 1
@@ -2025,7 +2024,7 @@ GameObject:
   - component: {fileID: 1202880246}
   m_Layer: 0
   m_Name: ScoreArea
-  m_TagString: Untagged
+  m_TagString: ScoreArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12118,6 +12117,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2110473039917979291, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
+        type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110473039917979293, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2110473039917979295, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12173,20 +12182,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2110473039917979293, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2110473039917979291, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
-        type: 3}
-      propertyPath: health
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2110473040517433995, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
         type: 3}
       propertyPath: m_TagString
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110473039130334410, guid: df175bb8bcb6442dab0f2d1ae65d2e40,
+        type: 3}
+      propertyPath: m_TagString
+      value: ScoreArea
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df175bb8bcb6442dab0f2d1ae65d2e40, type: 3}

@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ScoreArea : MonoBehaviour
 {
     public GameObject effectObject;
     public AudioClip shootingSound;
     private AudioSource audioSource;
+
+    public event Action<ScoreArea> onGameWin;
 
     void Start()
     {
@@ -23,5 +26,10 @@ public class ScoreArea : MonoBehaviour
         }
 
         audioSource.PlayOneShot(shootingSound);
+
+        if (onGameWin != null)
+        {
+            onGameWin(this);
+        }
     }
 }

@@ -23,9 +23,11 @@ public class GameController : MonoBehaviour
        if (player.holdingBall == false)
         {
             resetTimer -= Time.deltaTime;
+
+            //Lose scenario
             if (resetTimer <= 0)
             {
-                SceneManager.LoadScene("AliScene");
+                SceneManager.LoadScene("MenuScene");
             }
         }
     }
